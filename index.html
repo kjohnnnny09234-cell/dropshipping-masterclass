@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
   <title>Dropshipping Master Class | ₹199</title>
 
   <meta name="description"
-        content="Learn the fundamentals of dropshipping with the Dropshipping Master Class. Get access for just ₹199.">
+        content="Learn the fundamentals of dropshipping with our beginner-friendly Dropshipping Master Class for ₹199.">
 
   <style>
     * {
@@ -19,13 +18,14 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f6f7fb;
+      background: #f5f7fb;
       color: #111827;
       line-height: 1.6;
     }
 
+    /* HERO */
     .hero {
-      background: linear-gradient(135deg, #111827, #312e81);
+      background: linear-gradient(135deg, #0f172a, #312e81, #4f46e5);
       color: white;
       text-align: center;
       padding: 80px 20px 90px;
@@ -35,31 +35,32 @@
       display: inline-block;
       background: #facc15;
       color: #111827;
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 50px;
       font-weight: bold;
-      margin-bottom: 22px;
+      margin-bottom: 25px;
     }
 
     .hero h1 {
-      font-size: clamp(38px, 7vw, 68px);
+      font-size: clamp(42px, 8vw, 72px);
       line-height: 1.05;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .hero p {
-      max-width: 700px;
-      margin: 0 auto 30px;
+      max-width: 720px;
+      margin: 0 auto 25px;
       font-size: 20px;
       color: #e5e7eb;
     }
 
     .price {
-      font-size: 48px;
-      font-weight: 800;
+      font-size: 52px;
+      font-weight: 900;
       margin: 20px 0;
     }
 
+    /* BUTTON */
     .buy-button {
       display: inline-block;
       background: #22c55e;
@@ -69,36 +70,38 @@
       font-weight: 800;
       padding: 17px 35px;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,.25);
-      transition: .2s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      transition: all 0.2s ease;
     }
 
     .buy-button:hover {
       background: #16a34a;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
     }
 
     .secure {
-      margin-top: 15px;
-      color: #d1d5db;
+      margin-top: 14px;
       font-size: 14px;
+      color: #d1d5db;
     }
 
+    /* GENERAL */
     .container {
       width: min(1100px, 92%);
       margin: auto;
     }
 
     section {
-      padding: 70px 0;
+      padding: 75px 0;
     }
 
     .section-title {
       text-align: center;
-      font-size: 36px;
+      font-size: 38px;
       margin-bottom: 45px;
     }
 
+    /* FEATURES */
     .features {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -109,23 +112,29 @@
       background: white;
       padding: 30px;
       border-radius: 18px;
-      box-shadow: 0 8px 30px rgba(0,0,0,.07);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .icon {
-      font-size: 35px;
+      font-size: 38px;
       margin-bottom: 15px;
     }
 
     .card h3 {
-      margin-bottom: 10px;
       font-size: 21px;
+      margin-bottom: 10px;
     }
 
     .card p {
       color: #6b7280;
     }
 
+    /* WHO IT'S FOR */
     .audience {
       background: white;
     }
@@ -136,18 +145,37 @@
     }
 
     .audience-list div {
-      background: #f9fafb;
+      background: #f8fafc;
       margin: 12px 0;
-      padding: 17px 20px;
-      border-radius: 10px;
+      padding: 18px 20px;
+      border-radius: 12px;
       font-weight: 600;
     }
 
+    /* COURSE CONTENT */
+    .modules {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .module {
+      background: white;
+      margin-bottom: 15px;
+      padding: 20px 24px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .module strong {
+      font-size: 18px;
+    }
+
+    /* CTA */
     .cta {
       background: #111827;
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 85px 20px;
     }
 
     .cta h2 {
@@ -157,33 +185,41 @@
 
     .cta p {
       color: #d1d5db;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
       font-size: 18px;
     }
 
+    /* DISCLAIMER */
     .disclaimer {
       font-size: 13px;
       color: #6b7280;
       max-width: 750px;
-      margin: 30px auto 0;
+      margin: auto;
       text-align: center;
     }
 
+    /* FOOTER */
     footer {
-      text-align: center;
       background: #030712;
       color: #9ca3af;
+      text-align: center;
       padding: 25px 15px;
       font-size: 14px;
     }
 
+    /* MOBILE */
     @media (max-width: 800px) {
+
       .features {
         grid-template-columns: 1fr;
       }
 
       .hero {
         padding: 60px 20px 70px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
       }
 
       .section-title {
@@ -193,25 +229,37 @@
       .cta h2 {
         font-size: 32px;
       }
+
+      .buy-button {
+        width: 100%;
+        max-width: 360px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <header class="hero">
 
-    <div class="badge">🔥 BEGINNER-FRIENDLY MASTER CLASS</div>
+    <div class="badge">
+      🔥 BEGINNER-FRIENDLY MASTER CLASS
+    </div>
 
-    <h1>Dropshipping<br>Master Class</h1>
+    <h1>
+      Dropshipping<br>
+      Master Class
+    </h1>
 
     <p>
       Learn the fundamentals of starting and building
-      a dropshipping business — step by step.
+      a dropshipping business step by step.
     </p>
 
-    <div class="price">₹199</div>
+    <div class="price">
+      ₹199
+    </div>
 
     <a
       href="https://rzp.io/rzp/KNqbLEj8"
@@ -228,8 +276,9 @@
   </header>
 
 
-  <!-- WHAT YOU LEARN -->
+  <!-- WHAT YOU WILL LEARN -->
   <section>
+
     <div class="container">
 
       <h2 class="section-title">
@@ -260,8 +309,8 @@
           <div class="icon">📦</div>
           <h3>Order Fulfillment</h3>
           <p>
-            Learn how suppliers, orders, shipping,
-            and customers fit together.
+            Understand how suppliers, orders,
+            shipping and customers fit together.
           </p>
         </div>
 
@@ -269,7 +318,7 @@
           <div class="icon">📣</div>
           <h3>Marketing Basics</h3>
           <p>
-            Understand the fundamentals of attracting
+            Learn the fundamentals of attracting
             potential customers online.
           </p>
         </div>
@@ -278,8 +327,8 @@
           <div class="icon">💰</div>
           <h3>Pricing & Profit</h3>
           <p>
-            Learn basic pricing, costs, margins,
-            and profitability concepts.
+            Understand pricing, costs, margins
+            and basic profitability concepts.
           </p>
         </div>
 
@@ -295,10 +344,77 @@
       </div>
 
     </div>
+
   </section>
 
 
-  <!-- WHO IT'S FOR -->
+  <!-- COURSE MODULES -->
+  <section>
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Course Modules
+      </h2>
+
+      <div class="modules">
+
+        <div class="module">
+          <strong>Module 1 — Introduction to Dropshipping</strong>
+          <p>
+            Understand the dropshipping business model
+            and how the process works.
+          </p>
+        </div>
+
+        <div class="module">
+          <strong>Module 2 — Product Research</strong>
+          <p>
+            Learn the basics of researching and evaluating
+            potential products.
+          </p>
+        </div>
+
+        <div class="module">
+          <strong>Module 3 — Building Your Store</strong>
+          <p>
+            Understand the essential elements of an
+            effective online store.
+          </p>
+        </div>
+
+        <div class="module">
+          <strong>Module 4 — Suppliers & Fulfillment</strong>
+          <p>
+            Learn how suppliers, orders, delivery
+            and customers connect.
+          </p>
+        </div>
+
+        <div class="module">
+          <strong>Module 5 — Marketing</strong>
+          <p>
+            Explore the fundamentals of bringing
+            potential customers to your store.
+          </p>
+        </div>
+
+        <div class="module">
+          <strong>Module 6 — Pricing & Scaling</strong>
+          <p>
+            Learn basic pricing, testing and
+            growth concepts.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHO THIS IS FOR -->
   <section class="audience">
 
     <div class="container">
@@ -309,13 +425,21 @@
 
       <div class="audience-list">
 
-        <div>✅ Beginners interested in dropshipping</div>
+        <div>
+          ✅ Beginners interested in dropshipping
+        </div>
 
-        <div>✅ People who want to understand online stores</div>
+        <div>
+          ✅ People who want to understand online stores
+        </div>
 
-        <div>✅ Aspiring entrepreneurs</div>
+        <div>
+          ✅ Aspiring online entrepreneurs
+        </div>
 
-        <div>✅ Anyone who wants to learn before investing heavily</div>
+        <div>
+          ✅ Anyone who wants to learn before investing heavily
+        </div>
 
       </div>
 
@@ -324,12 +448,14 @@
   </section>
 
 
-  <!-- SECOND CTA -->
+  <!-- FINAL CTA -->
   <section class="cta">
 
     <div class="container">
 
-      <h2>Ready to Start Learning?</h2>
+      <h2>
+        Ready to Start Learning?
+      </h2>
 
       <p>
         Get the Dropshipping Master Class for just ₹199.
@@ -343,9 +469,9 @@
         🚀 GET ACCESS NOW — ₹199
       </a>
 
-      <p class="secure">
-        Secure payment via Razorpay
-      </p>
+      <div class="secure">
+        🔒 Secure payment via Razorpay
+      </div>
 
     </div>
 
@@ -360,7 +486,7 @@
       <p class="disclaimer">
         Dropshipping is a business model and not a guaranteed-income
         opportunity. Results can vary depending on product selection,
-        marketing, costs, competition, execution, and market conditions.
+        marketing, costs, competition, execution and market conditions.
       </p>
 
     </div>
@@ -368,10 +494,11 @@
   </section>
 
 
+  <!-- FOOTER -->
   <footer>
     © 2026 Dropshipping Master Class. All rights reserved.
   </footer>
 
+
 </body>
 </html>
-```
